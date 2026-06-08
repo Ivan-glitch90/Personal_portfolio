@@ -1,0 +1,237 @@
+
+
+body{
+    background: #0e0c09;
+    color: #d4c9b0;    
+    font-family: 'Crimson Pro', serif;
+    font-size: 18px;
+    line-height: 1.6;/*Helps with line spacing for the entire doc*/
+    
+}
+
+/*style for all the h1,h2's*/
+
+h1, h2 {
+    font-family: 'Bebas Neue', sans-serif;
+
+}
+
+/* Making my name bigger*/
+
+h1 {
+    font-size: 80px;
+    color: #f0ead8;
+    line-height: 1;
+    margin-bottom: 16px;
+}
+/*Selecting buttons from navbar in 1 line learned 05/26/27*/
+.navbar a, .hero-tag, .hero-buttons a {
+  font-family: 'JetBrains Mono', monospace;
+}
+
+/* Navbar */
+.navbar1 {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 20px 48px;
+  border-bottom: 1px solid #2a2318;
+  gap: 36px;
+  list-style: none;
+  
+}
+
+
+.navbar1 a {
+  color: #6b6050;
+  text-decoration: none;
+  font-size: 13px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.nav1 {
+    background-color: #0e0c09; 
+}
+
+
+
+/*Hero section and text*/
+.hero {
+    display: flex;
+    flex-direction: column;
+    padding: 40px 48px;
+    max-width: 700px;
+    
+}
+
+.uphero{
+    color: #e8a020;
+}
+
+/*About*/
+.about{
+    border-top: 1px solid #2a2318;
+    padding: 80px 48px;
+    border-bottom: 1px solid #2a2318;
+    
+}
+
+.about p{
+    max-width: 700;
+}
+
+/*Buttons Hero section*/
+.hero-buttons {
+    display: flex;
+    gap: 16px;
+    margin-top: 24px;
+}
+
+.hero-buttons a {
+    text-decoration: none;
+    padding: 12px 24px;
+    font-size: 12px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.btn-solid {
+    background: #e8a020;
+    color: #0e0c09;
+    
+}
+
+.btn-outline {
+    border: 1px solid #e8a020;
+    color: #e8a020;
+}
+
+/*Footer*/
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 48px;
+    border-top: 1px solid #2a2318;
+    margin-top: 80px;
+}
+
+.footer-copy {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 1px;
+    color: #6b6050;
+}
+
+.footer-links {
+    display: flex;
+    gap: 24px;
+    list-style: none;
+}
+
+.footer-links a {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #6b6050;
+    text-decoration: none;
+}
+
+
+/*Bootstrap getintouch added 05/26/26*/
+
+.in_touch{
+    font-family: 'Crimson Pro', serif;
+    padding: 24px 48px;
+    max-width: 1000px;
+   
+}
+
+.form-control{
+    background-color: #141009;
+    border-color: #6b6050;
+   
+    
+}
+
+/*Changing this was harder than expected*/
+.form-control::placeholder{
+    color: #817968;
+}
+
+.form-label{
+    color: #998f79;
+}
+
+/*Card section added 05-26-26*/
+
+/*added to have a space between line and cards*/
+.container-fluid{
+    padding-bottom: 40px;
+}
+
+
+.cards{
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    padding: 24px 48px;
+    border-top: 1px solid #2a2318;
+    
+}
+
+.card{
+    background-color:#141009;
+    font-family: 'Crimson Pro', serif;
+    color: #d4c9b0;
+    border-color: #998f79;
+    
+}
+
+
+/* Hoover effect - added/learned during class*/
+.hero-buttons a:hover {
+  opacity: 0.75;
+}
+
+
+
+.card-body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+
+}
+
+
+
+/* Buttons cards*/
+
+.btn-primary{
+    background-color: #e8a020;
+    color: #0e0c09;
+    border: none;
+    border-radius: 0%;
+    text-transform: uppercase;
+    padding: 12px 24px;
+    font-size: 12px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.btn-primary:hover{
+    background-color: #e8a020;
+    opacity: 0.85;
+    color: black;
+}
+
+
+/*using id to send menu to the right side of screen*/
+#navbarNav{
+    justify-content: end;
+    color: #d4c9b0;
+}
