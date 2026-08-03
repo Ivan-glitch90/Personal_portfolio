@@ -174,21 +174,19 @@ footer {
 }
 
 
-.cards{
-    display: flex;
-    justify-content: center;
-    gap: 25px;
-    padding: 24px 48px;
-    border-top: 1px solid #2a2318;
-    
-}
 
 .card{
     background-color:#141009;
     font-family: 'Crimson Pro', serif;
     color: #d4c9b0;
-    border-color: #998f79;
+    border: 1px solid #2a2318;
+    padding: 8px;
     
+}
+
+.card-text {
+    font-size: 15px;
+    color: #998f79;
 }
 
 
@@ -204,6 +202,7 @@ footer {
     flex-direction: column;
     justify-content: space-between;
     align-items: stretch;
+    padding: 16px 8px;
 
 }
 
@@ -234,4 +233,90 @@ footer {
 #navbarNav{
     justify-content: end;
     color: #d4c9b0;
+}
+
+/*added aug 3rd 2026 suggestion */
+.card-title {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 28px;
+    letter-spacing: 1px;
+    color: #f0ead8;
+    margin-bottom: 8px;
+}
+
+/*Experience section added Aug 2026*/
+
+.experience {
+    border-top: 1px solid #2a2318;
+    padding: 80px 48px;
+}
+
+.timeline {
+    position: relative;
+    max-width: 700px;
+    margin-top: 40px;
+}
+
+.timeline::before {
+    content: "";
+    position: absolute;
+    left: 6px;
+    top: 0;
+    bottom: 0;
+    width: 1px;
+    background: #2a2318;
+}
+
+.timeline-item {
+    position: relative;
+    padding-left: 32px;
+    margin-bottom: 40px;
+}
+
+.timeline-item:last-child {
+    margin-bottom: 0;
+}
+
+.timeline-marker {
+    position: absolute;
+    left: 0;
+    top: 6px;
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    background: #e8a020;
+    border: 2px solid #0e0c09;
+}
+
+.timeline-role {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 24px;
+    letter-spacing: 1px;
+    color: #f0ead8;
+    margin-bottom: 4px;
+}
+
+.timeline-meta {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 12px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #998f79;
+    margin-bottom: 8px;
+}
+
+.timeline-desc {
+    font-size: 16px;
+    color: #d4c9b0;
+    max-width: 600px;
+}
+
+#projects {
+    border-top: 1px solid #2a2318;
+    padding-top: 40px;
+}
+
+.card-img-top {
+    height: 180px;
+    object-fit: cover;
 }
