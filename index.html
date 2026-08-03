@@ -126,16 +126,26 @@
 
     <div class="container-fluid">
             <section class="in_touch" id="contact">
-        <div class="mb-3">
-            <label for="exampleFormControlInput1" class="form-label">Lets get in touch!</label>
-            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="your email here">
-        </div>
+  <h2>Let's get in touch!</h2>
+  <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/thank-you.html">
+    <input type="hidden" name="form-name" value="contact">
 
-        <div class="mb-3">
-            <label for="exampleFormControlTextarea1" class="form-label">Send me a message!</label>
-            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-        </div>
-    </section>
+    <!-- honeypot field: hidden from humans, bots fill it in and get silently rejected -->
+    <p class="visually-hidden">
+      <label>Don't fill this out: <input name="bot-field"></label>
+    </p>
+
+    <div class="mb-3">
+      <label for="email" class="form-label">Your email</label>
+      <input type="email" class="form-control" id="email" name="email" placeholder="your email here" required>
+    </div>
+    <div class="mb-3">
+      <label for="message" class="form-label">Your message</label>
+      <textarea class="form-control" id="message" name="message" rows="3" required></textarea>
+    </div>
+    <button type="submit" class="btn-solid">Send Message</button>
+  </form>
+</section>
     </div>
     
 
