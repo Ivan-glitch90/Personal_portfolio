@@ -78,7 +78,7 @@ h1 {
 }
 
 .about p{
-    max-width: 700;
+    max-width: 700px;
 }
 
 /*Buttons Hero section*/
@@ -122,7 +122,7 @@ footer {
     font-family: 'JetBrains Mono', monospace;
     font-size: 11px;
     letter-spacing: 1px;
-    color: #6b6050;
+    color: #998f79;
 }
 
 .footer-links {
@@ -136,7 +136,7 @@ footer {
     font-size: 11px;
     letter-spacing: 1px;
     text-transform: uppercase;
-    color: #6b6050;
+    color: #998f79;
     text-decoration: none;
 }
 
@@ -153,13 +153,21 @@ footer {
 .form-control{
     background-color: #141009;
     border-color: #6b6050;
-   
-    
+    color: #d4c9b0; /* Bootstrap defaults this to dark gray, which is unreadable on our dark background */
+}
+
+/* Bootstrap's :focus rule has higher specificity and turns fields white with dark text,
+   so the dark colors have to be repeated here for the focused state */
+.form-control:focus{
+    background-color: #141009;
+    color: #d4c9b0;
+    border-color: #e8a020;
+    box-shadow: 0 0 0 0.2rem rgba(232, 160, 32, 0.25);
 }
 
 /*Changing this was harder than expected*/
 .form-control::placeholder{
-    color: #817968;
+    color: #8f8672; /* slightly lighter than before so it passes contrast checks */
 }
 
 .form-label{
@@ -320,4 +328,48 @@ footer {
     height: 180px;
     object-fit: cover;
     object-position: top;
+}
+
+/* Tech tags on project cards */
+.tech-tags {
+    list-style: none;
+    margin: 12px 0 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.tech-tags li {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 1px;
+    color: #d4c9b0;
+    border: 1px solid #3a3022;
+    padding: 2px 8px;
+}
+
+/* Row of buttons at the bottom of each card */
+.card-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 20px;
+}
+
+/* Outline version of the card button, used for "Live site" */
+.btn-outline-card {
+    background-color: transparent;
+    color: #e8a020;
+    border: 1px solid #e8a020;
+    border-radius: 0%;
+    padding: 12px 24px;
+    font-size: 12px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.btn-outline-card:hover {
+    background-color: #e8a020;
+    color: #0e0c09;
 }
